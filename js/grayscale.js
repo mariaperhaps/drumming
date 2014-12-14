@@ -19,7 +19,8 @@ for(var i = 0; i < play.length; i++){
        objs.push(obj);
     }
 }
-//
+
+//loop through audio tags and add click events for  play and pause
 objs.forEach(function(val){
  val.key.addEventListener('click', function(){
     if(is_playing === 0){
