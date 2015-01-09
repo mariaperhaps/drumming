@@ -22,15 +22,23 @@ for(var i = 0; i < play.length; i++){
 
 //loop through audio tags and add click events for  play and pause
 objs.forEach(function(val){
+    var i = val.key
+    var span = $(i).next()
+    var text = span.text();
+    var band = val.value.id;
  val.key.addEventListener('click', function(){
+
     if(is_playing === 0){
         val.value.play()
         is_playing = 1;
         $(this).removeClass('fa-play').addClass('fa-pause')
+
+        span.text(band)
     }else{
         val.value.pause();
         $(this).removeClass('fa-pause').addClass('fa-play')
         is_playing = 0;
+        span.text(text)
     }
  });
 });
