@@ -56,6 +56,9 @@
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#drums">Drums</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#music">Music</a>
                     </li>
                     <li>
@@ -86,11 +89,23 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>About</h2>
                 <p>Classically trained as a percussionist, Maria has been playing for more than twenty years. She studied Music Technology at NYU, ultimately focusing her attention on the kit and forming the rock band, Object. <p>As a private instructor, her teaching style emphasizes technical fundamentals and encourages creativity behind the kit.</p>
-                <h4>Currently Maria is teaching at The Tom Tom Academy in Brooklyn, NY</h4>
-                <a href="http://www.tomtomacademy.com/">Click Here for more Info</a>
+                <h4>Currently Maria is teaching in Brooklyn, NY</h4>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="drums" class="container content-section text-center">
+        <div class="row">
+           <h4 id="play">Play Maria's Drums</h4>
+            <div class="drum-container">
+                <div class="machine col-md-6 col-md-offset-3"></div>
             </div>
         </div>
     </section>
+
 
     <!-- Music Section -->
     <section id="music" class="content-section text-center">
@@ -99,8 +114,8 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Music</h2>
                     <ul class="songs">
-                         <li><i class="fa fa-play"></i><span>Crawling</span><audio id="TheEvilUs" src="audio/Crawling.m4a"></audio></li>
-                        <li><i class="fa fa-play"></i><span>Dead End</span><audio id="Psychic Fits"src="audio/deadend.m4a"></audio></li>
+                         <li><i class="fa fa-play"></i><span>Crawling</span><audio id="TheEvilUs" src="audio/Crawling.mp3"></audio></li>
+                        <li><i class="fa fa-play"></i><span>Dead End</span><audio id="Psychic Fits"src="audio/deadend.mp3"></audio></li>
                         <li><i class="fa fa-play"></i><span>Tomorrowland</span><audio id="Object" src="audio/Tomorrowland.mp3"></audio></li>
 
                     </ul>
@@ -136,7 +151,15 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Contact</h2>
-               <a href="mailto:mariatschettino@gmail.com">mariatschettino@gmail.com</a>
+                    <input id="name-input" class="form-control contact-form" placeholder="NAME"></input>
+                    <input id="email-input" class="form-control contact-form" placeholder="EMAIL"></input>
+
+
+                    <textarea type="text" id="message-input" class="form-control message" placeholder="MESSAGE"></textarea>
+                    <button id="contact-submit" class="btn btn-default">Submit</button>
+                    <div class="col-md-12 email-addy">
+                        <i class="fa fa-envelope"></i><a href="mailto:mariatschettino@gmail.com">mariatschettino@gmail.com</a>
+                    </div>
                 </p>
             </div>
         </div>
@@ -158,6 +181,9 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
+
+    <script src="js/drums.js"></script>
+    <script src="js/contact.js"></script>
 
 </body>
 
